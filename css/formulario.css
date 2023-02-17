@@ -1,3 +1,53 @@
+body {
+  background-color: #E8E2E2;
+}
+
+.formContainer {
+  margin: 100px auto;
+}
+
 .container {
-  background-color: aqua;
+  align-items: center;
+  background-color: #3C84AB;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.404);
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+}
+
+h3 {
+  color: #00425A;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.404);
+}
+
+.container>label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container>label>input {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin-bottom: 15px;
+  width: 350px;
+}
+
+.container>input {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+
 }

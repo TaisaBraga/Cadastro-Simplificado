@@ -11,19 +11,26 @@
 </head>
 
 <body>
-  <form action="index.php" method="post">
-    <fieldset class="container">
-      <legend>Formulário de Cadastro</legend>
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" />
-      <label for="email">E-mail</label>
-      <input type="email" name="email" />
-      <label for="senha">Senha</label>
-      <input type="password" name="senha" />
-      <input type="submit" name="Cadastrar" />
+  <div class="formContainer">
+    <form action="index.php" method="post">
+      <h3>Formulário de Cadastro</h3>
+      <fieldset class="container">
+        <label for="nome">Nome:
+          <input type="text" name="nome" />
+        </label>
 
-    </fieldset>
-  </form>
+        <label for="email">E-mail:
+          <input type="email" name="email" />
+        </label>
+
+        <label for="senha">Senha:
+          <input type="password" name="senha" />
+        </label>
+
+        <input type="submit" name="Cadastrar" />
+      </fieldset>
+    </form>
+  </div>
 </body>
 
 </html>

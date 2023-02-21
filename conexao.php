@@ -1,12 +1,9 @@
 <?php
+//criar variaveis
 $hostname = "localhost";
-$bancodedados = "dbcaduser";
 $usuario = "root";
 $senha = "";
+$bancodedados = "dbcaduser";
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
-
-if ($mysqli->connect_errno) {
-  echo "Falha ao conectar: (" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
-} else
-  echo "Conectado ao banco de dados";
+//criar conexao
+$dbconnection = mysqli_connect($hostname, $usuario, $senha, $bancodedados);

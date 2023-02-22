@@ -15,15 +15,15 @@
       <h3>Formulário de Cadastro</h3>
       <fieldset class="container">
         <label for="nome">Nome:
-          <input type="text" name="nome" />
+          <input type="text" name="nome" required />
         </label>
 
         <label for="email">E-mail:
-          <input type="email" name="email" />
+          <input type="email" name="email" required />
         </label>
 
         <label for="senha">Senha:
-          <input type="password" name="senha" />
+          <input type="password" name="senha" required />
         </label>
 
         <input type="submit" name="cadastrar" />

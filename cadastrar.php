@@ -2,8 +2,8 @@
 include_once('conexao.php');
 
 //receber a informacao
-$nome = $_POST['nome'];
-$email = $_POST['email'];
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
 //inserir na table usuario (nome das colunas) os valores (nome das variaveis)
